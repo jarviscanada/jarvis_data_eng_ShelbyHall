@@ -4,7 +4,7 @@ cmd=$1
 db_username=$2
 db_password=$3
 
-sudo systemctl status docker || sudo systemctl start docker
+sudo systemctl status docker > /dev/null || sudo systemctl start docker > /dev/null
 
 docker container inspect jrvs-psql
 container_status=$?
@@ -32,7 +32,7 @@ docker run --name jrvs-psql \
   -p 5432:5432 \
   postgres:9.6-alpine
 
-	exit$?
+	exit $?
 	;;
 
 start|stop)
