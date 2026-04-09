@@ -19,7 +19,7 @@
 	cpu_idle=$(vmstat 1 2 | tail -1 | awk '{print $15}' | xargs)
 	cpu_kernel=$(vmstat 1 2 | tail -1 | awk '{print $14}' | xargs)
 	disk_io=$(vmstat -d | tail -1 | awk '{print $10}' | xargs)
-	disk_available=$(df -BM / | tail -1 | awk '{print $4}' | xargs)
+	disk_available=$(df -BM / | tail -1 | awk '{print substr($4, 1, length($4)-1)}' | xargs)
 	timestamp=$(date -u "+%Y-%m-%d %H:%M:%S")
 
 	host_id="(SELECT id FROM host_info WHERE hostname='$hostname')"
@@ -41,8 +41,8 @@
 		$disk_io,
 		$disk_available
 	);"
-
-	export PGPASSWORD+$psql_password
+	
+	export PGPASSWORD=$psql_password
 	psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"
 
 exit $?
