@@ -29,7 +29,7 @@
 	cpu_model,
 	cpu_mhz,
 	l2_cache,
-	timestamp,
+	\"timestamp\",
 	total_mem
 	
 	) VALUES (

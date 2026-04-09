@@ -15,22 +15,22 @@
 	hostname=$(hostname -f)
 	vmstat_mb=$(vmstat --unit M)
 
-	memory_free=$(echo "vmstat_mb" | tail -1 | awk '{print $4}' | xargs)
+	memory_free=$(echo "$vmstat_mb" | tail -1 | awk '{print $4}' | xargs)
 	cpu_idle=$(vmstat 1 2 | tail -1 | awk '{print $15}' | xargs)
 	cpu_kernel=$(vmstat 1 2 | tail -1 | awk '{print $14}' | xargs)
-	disk_io=$(vmstat -d | tail -1 | awk '{print $9 + $10}' | xargs)
+	disk_io=$(vmstat -d | tail -1 | awk '{print $10}' | xargs)
 	disk_available=$(df -BM / | tail -1 | awk '{print $4}' | xargs)
 	timestamp=$(date -u "+%Y-%m-%d %H:%M:%S")
 
 	host_id="(SELECT id FROM host_info WHERE hostname='$hostname')"
 
 	insert_stmt="INSERT INTO host_usage(
-		\"timestamp\"
+		\"timestamp\",
 		host_id,
 		memory_free,
 		cpu_idle,
 		cpu_kernel,
-		disk.io,
+		disk_io,
 		disk_available
 		) VALUES (
 		'$timestamp',
@@ -40,7 +40,7 @@
 		$cpu_kernel,
 		$disk_io,
 		$disk_available
-	):"
+	);"
 
 	export PGPASSWORD+$psql_password
 	psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"
