@@ -18,10 +18,9 @@
 	cpu_architecture=$(echo "$lscpu_out" | egrep "^Architecture:" | awk '{print $2}' | xargs)
 	cpu_model=$(echo "$lscpu_out" | egrep "^Model name:" | cut -d':' -f2 | xargs)
 	cpu_mhz=$(cat /proc/cpuinfo | grep "cpu MHz" | head -1 | awk -F: '{print $2}' | xargs)
-	l2_cache=$(echo "lscpu_out" | egrep "^L2 cache:" | awk '{print $3}' | xargs)
-	total_mem=$(cat /proc/meminfo | egrep "^MemTotal:" | awk '{print $2, $3}' | xargs)
+	l2_cache=$(echo "$lscpu_out" | egrep "^L2 cache:" | awk '{print $3}' | xargs)
+	total_mem=$(cat /proc/meminfo | egrep "^MemTotal:" | awk '{print $2}' | xargs)
 	timestamp=$(date -u "+%Y-%m-%d %H:%M:%S")
-
 
 	insert_stmt="INSERT INTO host_info(
 	hostname,
