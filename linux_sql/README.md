@@ -1,6 +1,6 @@
 # Linux Cluster Monitoring Agent
 # Introduction
-The Linux Cluster Monitering Agent (LCA) is a software component installed on cluster nodes to collect both hardware specifications and resource usage data, to then store the data in a PostgreSQL database for analysis. The system is designed to for backend developers and LCA team members who need to monitor cluster health and performace over time. 
+The Linux Cluster Monitering Agent (LCA) is a software component installed on cluster nodes to collect both hardware specifications and resource usage data, to then store the data in a PostgreSQL database for analysis. The system is designed for backend developers and LCA team members who need to monitor cluster health and performace over time. 
 
 The monitoring agent consists of two main scripts:
 - ```host_info.sh``` which captures static hardware specifications (executed once)
