@@ -6,8 +6,6 @@ In this SQL project, I worked with a relational dataset representing a newly est
 
 ###### Table Setup (DDL)
 ```sql
---Connect to database
-\c cd
 
 --Create the members table
 CREATE TABLE cd.members
