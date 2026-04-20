@@ -7,7 +7,7 @@ VALUES
   (9, 'Spa', 20, 30, 100000, 800);
 
 --Question 2:
-```
+
 INSERT INTO cd.facilities
 (facid, name, membercost, guestcost,initialoutlay, monthlymaintenance)
 SELECT
@@ -19,13 +19,13 @@ MAX(facid) + 1,
 800
 FROM
 cd.facilities;
-```
+
 --Question 3:
-```
+
 UPDATE cd.facilities
 SET initialoutlay=10000
 WHERE name = 'Tennis Court 2';
-```
+
 
 --Question 4:
 
