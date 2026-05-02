@@ -1,48 +1,41 @@
-# Preferred name (Characters only)
-name: "Shelby Hall"
-# Your GitHub repo root URL
+Name: "Shelby Hall"
 github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_ShelbyHall
 
 # Introduce yourself, your academic and professional background.
 
 # What excites you about the software industry and your passion. At least 80 words
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+Summary: I am a BASc graduate from the University of Guelph-Humber with 4+ years of client-facing experience in sales and marketing, and a growing technical foundation built through real-world projects spanning database design, infrastructure monitoring, and process improvement. I bring a detaill-oriented, analytical mindset developed through a 3.7 GPA academic record. I now apply this to understanding how to translate stakeholder needs into clear, actionable insights.
 
-# Group your skills by level.
-  Proficient: RDBMS/SQL, Python, Data Modelling, Git, Agile/Scrum, CRM & record-keeping, Account Management
-  Competent: Linux/Bash, Docker
-  Familiar: 
+What excites me about the software industry is that it sits at the centre of solving modern problems. My previous professional background taught me how to identify people's needs and find the best way to deliver them. I've come to realize that translates well into thinking about how systems should be built and why, which is what great software does at scale. There's always something new to learn, a better approach to discover, or a more elegant solution to find, and as someone who thrives on growth and challenge, that's what I'm seeking.  
+
+# Group your skills by level. 
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
   # At least 5 skills
   proficient:
-    - Java
-    - Linux/Bash
     - RDBMS/SQL
+    - Python
+    - Data Modelling
     - Agile/Scrum
+    - Pandas & Numpy
     - Git
   # At least 5 skills
   competent:
-    - Donec
-    - fermentum
-    - Donec
-    - fermentum
-    - Donec
+    - Linux/Bash
+    - Docker
+    - Jupyter
+    - Cloud Computing
   # At least 5 skills
   familiar:
-    - Donec
-    - fermentum
-    - fermentum
-    - fermentum
-    - fermentum
+    - Databricks
 
 # List of Jarvis projects
 jarvis_projects:
-  - name: "Cluster Monitor"
-    git_url: "/linux_sql"
+  - name: "Linux Cluster Monitoring Agent"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_ShelbyHall/tree/develop/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+    description: During this project, I developed a Linux Cluster Monitoring Agent installed across cluster nodes to collect hardware specifications and real-time resource usage data, storing it in a centralized PostgreSQL database for historical analysis. The primary purpose is to proactively identify underperforming servers and detect node failures before they impact production workloads, giving backend developers and operations teams clear, ongoing visibility into cluster health. The monitoring agent was built using Bash for data collection, Docker to provision a PostgreSQL instance, and crontab for automated periodic data collections.  
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
@@ -66,62 +59,45 @@ jarvis_projects:
     description: ""
 
 # List of personal or academic projects
-# Feel free to add more projects
-highlighted_projects:
-    #project name
-  - name: "Web app for resturant"
-    #URL is optional
-    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
-    # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
-  - name: "Machine Learning"
-    git_url:
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+Highlighted_projects:
+  - Name: "B2B Membership Growth & Sales Tracking Initiative"
+    Description: I have collaborated in creating a structured outreach and tracking initiative to drive Costco Business Executive Membership sign-ups across 50+ external organizations and hundreds of employees in the Peel Region. This was designed to maintain a centralized tracking system to monitor all outreach activities, sales interactions, and membership conversion outcomes, enabling data-driven decisions to optimize campaign performance. The database was built using Excel to track 50+ target companies, logging contact details, outreach history, and follow-up schedules. With that being said, I coordinated multi-touch sales and marketing activities, such as in-person visits, email campaigns, and event outreaches across manufacturing, retail, and services sectors. With this program, I delivered weekly progress reports to the sales team, refining targeting strategy based on conversion trends.  
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
 #The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
-professional_experience:
+Professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
-  - title: "Software Developer"
-    company: "Jarvis"
-    duration: "2020-present"
+  - title: "Business Systems Analyst"
+    company: "Jarvis Consulting Group"
+    duration: "2026-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
-  - title: "Tutor"
-    company: "XYZ Company"
-    duration: "2019"
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
+  - Description: Contributed to full-stack software and data engineering work across the SDLC, from system design and backend development to data pipelines and cloud deployment. I've collaborated in creating production-grade solutions using Python and SQL for data analytics and Spark for big data processing. In addition, I've worked with Linux, Docker, and Git in a DevOps environment. The projects relied on collaboration in cross-functional teams to deliver technical solutions while strengthening leadership and client communication skills.
+  - title: "Sales and Marketing Agent"
+    company: "Costco Wholesale"
+    duration: "2021-2026"
+    description: I drove high-ticket product sales across the Peel Region, achieving a 96% success rate through strategic client engagement and tailored pitch positioning. I partnered with the marketing team to develop and execute regional campaigns that grew brand awareness and deepened customer relationships. in order to acheive the target goals, I collaborated with my team to plan and lead promotional events across multiple locations, acting as the face of the brand and primary liaison between the company and its clients. In the background, when not communicating with the clients directly, I would also be tasked with managing client accounts with a focus on retention, accurate financial record-keeping, and consistently exceeding revenue targets.
 
 #List of edcuation
-education: 
-  - school_name: "XYZ university"
-    duration: "2012-2016"
+Education: 
+  - school_name: "University of Guelph"
+    duration: "2020-2024"
     degree: "Bachelor of Applied Sciences"
-    department: "Electrical and Computer Engineering"
-    # optional
-    awards_achievements: 
-      - "Scholarship"
-      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
-      - "GPA: 3.8/4.0"
-  - school_name: "XYZ university"
-    duration: "2016-2018"
-    degree: "Master of Engineering"
-    department: "Electrical and Computer Engineering"
-    awards_achievements: 
+    department: "Jusitce Studies"
 
-#Optional section
-others:
-    #category
-  - title: "Certificates"
-    #list of items
-    bullets:
-      - "Udacity Machine Learning (2019)"
-  - title: "Awards"
-    bullets:
-      - "Winner"
+  - school_name: "Humber Institute of Technology & Advanced Learning"
+    duration: "2020-2024"
+    degree: "Police Foundations"
+    department: "Social & Community Services"
+  
+    Awards_achievements:
+      - "Academic Excellence Scholarship"
+      - "Graduated with Distinction"
+      - "GPA: 3.7/4.0"
+
+Miscellaneous:
   - title: "Activities/Hobbies"
     bullets:
-      - "Basketball player"
-      - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Travelling: I've travelled to 18 countries, in 4 different continents. I enjoy learning new cultures and integrating into the local lifestyle."
+      - "Tennis: Took tennis lessons for four years as a youth. Now I tend to visit courts as a passtime."
+      - "Chess: I used to play competitively as a youth, where the highest I've won was fourth place in a championship with hundreds of competitors. Now I play for fun with my dad."
