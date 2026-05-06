@@ -92,7 +92,9 @@ education:
     department: "Jusitce Studies"
 
     awards_achievements: 
-      - "abc"   
+      - "Graduated with distinction"   
+      - "Academic Excellence Scholarship"
+      - "GPA: 3.7/4.0"
   - school_name: "Humber Institute of Technology & Advanced Learning"
     duration: "2020-2024"
     degree: "Police Foundations"
@@ -100,8 +102,6 @@ education:
   
     awards_achievements:
       - "Academic Excellence Scholarship"
-      - "Graduated with Distinction"
-      - "GPA: 3.7/4.0"
 
 others:
   - title: "Activities/Hobbies"

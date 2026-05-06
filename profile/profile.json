@@ -2,7 +2,9 @@
   "education": [
     {
       "awards_achievements": [
-        "abc"
+        "Graduated with distinction",
+        "Academic Excellence Scholarship",
+        "GPA: 3.7/4.0"
       ],
       "degree": "Bachelor of Applied Sciences",
       "department": "Jusitce Studies",
@@ -11,9 +13,7 @@
     },
     {
       "awards_achievements": [
-        "Academic Excellence Scholarship",
-        "Graduated with Distinction",
-        "GPA: 3.7/4.0"
+        "Academic Excellence Scholarship"
       ],
       "degree": "Police Foundations",
       "department": "Social \u0026 Community Services",
