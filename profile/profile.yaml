@@ -12,18 +12,12 @@ summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis 
 skills:
   # At least 5 skills
   proficient:
-    - Java
-    - Linux/Bash
     - RDBMS/SQL
     - Agile/Scrum
     - Git
   # At least 5 skills
   competent:
-    - Donec
-    - fermentum
-    - Donec
-    - fermentum
-    - Donec
+    - Linux/Bash
   # At least 5 skills
   familiar:
     - Donec
@@ -120,4 +114,4 @@ others:
     bullets:
       - "Basketball player"
       - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Volunte:`, ABC Food bank: Ut enim ad minim veniam"
