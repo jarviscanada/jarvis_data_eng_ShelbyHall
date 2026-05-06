@@ -26,11 +26,19 @@ Rather than building a complex enterprise system, the architecture for this PoC 
 ## Data Analytics and Wrangling
 
 **Key Segment insights:** 
+| Segment | Avg Recency | Avg Frequency | Avg Monetary|
+| --- | --- | --- | --- |
+| Loyal Customers | 5,284 days | 22.82 | £9,610.46 |
+| At Risk | 5,539 days | 7.86 | £2241.89 |
+| Need Attention | 5314 days | 5.43 | £1671.96 |
+| Potential Loyalists | 5271 days | 4.40 | £1314.66 |
+| About to Sleep | 5314 days | 1.88 | £639.32 |
+| Hibernating | 5675 days | 1.62 | £408.11 |
+| Promising | 5273 days | 1.01 | £344.55 |
 
-* **Champions** (_,___ customers) - highest frequency (avg ___ invoices) and monetary value (avg £_,___). Using these statistics, these are the most valuable customers and should be rewarded and retained.
-* **Hibernating Customers** (_,___ customers) - infrequent buyers averaging __ purchases and £___ in spend. A solution tailored to addressing these statistics would be to add seasonal promotions and discounts, which could re-engage this large segment.
-* **Lost Customers** (___ customers) - averaging only _ purchases and generating a net loss of £__.__ per customer. Customer service policies should be reviewed to reduce rebates and convert these customers into at least the "losing but engaged" segment.
-* **Potential Loyalists** (___ customers) - averaging about __ purchases and £___ in spend. These customers are high-priority for the next quarter, therefore loyalty bonuses, memberships, and/or exclusive perks could secure them as loyal or champion customers.
+* **Loyal Customers** (712 customers) - highest frequency (avg 22 invoices) and monetary value (avg £9,610). Using these statistics, these are the most valuable customers and should be prioritized for retention through exclusive rewards and early access to new products.
+* **Potential Loyalists** (893 customers) - averaging about 4 purchases and £1,314 in spend. These customers are high-priority for the next quarter, therefore loyalty bonuses, memberships, and/or exclusive perks could secure them as loyal or champion customers.
+* **Hibernating Customers** (1,133 customers) - have the highest recency and the lowest frequency and spend, averaging 2 purchases and £408 in spend. A solution tailored to addressing these statistics would be to add "win-back" emails, seasonal promotions and discounts, which could re-engage this large segment.
 
 # Improvements 
 Several improvements can be made to the PoC in future iterations to optimize its functions:
