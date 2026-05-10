@@ -15,30 +15,51 @@ The project was implemented using the following technologies and tools:
 * **SQLAlchemy & psycopg2**: used to connect to and query the PostgreSQL data warehouse from Python
 * **PostgreSQL**: data warehouse provisioned via Docker to store and query the retail transaction data
 * **Docker**: used to provision and manage both the PostgreSQL and Jupyter Notebook containers in isolated environments
+
 # Implementation
 ## Project Architecture
-Rather than building a complex enterprise system, the architecture for this PoC was deliberately kept simple and reproducible. The transactional data already existed in LGS's SQL Server, so the focus was on creating an accessible copy of that data that Jarvis could work with safely and independently. This file was loaded into a local PostgreSQL data warehouse provisioned via Docker, serving as the OLAP layer for analysis.
+Rather than building a complex enterprise system, the architecture for this PoC was deliberately designed to be lightweight and reproducible. Since the transactional data already exist within LGS's SQL Server, the focus was on creating an isolated analytics environment where sanitized data could be safely analyzed independently of production systems.
 
-* The tech stack used for this PoC includes Python 3.8, Jupyter Notebook, Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy, and PostgreSQL, all running inside Docker containers connected via a shared bridge network ```(jarvis-net)```. 
-* The two Docker containers used are ```jrvs-psql``` for the PostgreSQL data warehouse and ```jrvs-jupyter``` for the Jupyter Notebook analytics environment.
-* Both containers are connected via the ```jarvis-net``` bridge network, allowing the Jupyter notebook to query the PostgreSQL database using the container name as the hostname. This keeps the setup portable and easy to reproduce on any developer's local environment.
+![Data Analysis Architecture](https://github.com/jarviscanada/jarvis_data_eng_ShelbyHall/blob/feature/python_data_wrangling/python_data_analytics/assets/DataAnalysis.png?raw=true)
+
+#### **Architecture Overview**
+* A lightweight ETL process exports sanitized invoice data for analytics.
+* The sanitized data is loaded into a local PostgreSQL data warehouse ```jrvs-psql``` running in Docker.
+* PostgreSQL serves as the OLAP layer for downstream analytics.
+
+
+#### **Analytics Environment**
+
+A second Docker container ```jrvs-jupyter``` hosts the analytics stack:
+
+* Python 3.8
+* Jupyter Notebook
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* SQLAlchemy
+
+Both containers communicate through the shared Docker bridge network ```jarvis-net```, allowing Jupyter notebooks to query PostgreSQL directly using the container hostname.
 
 ## Data Analytics and Wrangling
 
-**Key Segment insights:** 
-| Segment | Avg Recency | Avg Frequency | Avg Monetary|
-| --- | --- | --- | --- |
-| Loyal Customers | 5,284 days | 22.82 | £9,610.46 |
-| At Risk | 5,539 days | 7.86 | £2241.89 |
-| Need Attention | 5314 days | 5.43 | £1671.96 |
-| Potential Loyalists | 5271 days | 4.40 | £1314.66 |
-| About to Sleep | 5314 days | 1.88 | £639.32 |
-| Hibernating | 5675 days | 1.62 | £408.11 |
-| Promising | 5273 days | 1.01 | £344.55 |
+My goal is to design a new marketing strategy with the data I was provided in order to create a business solution.
 
-* **Loyal Customers** (712 customers) - highest frequency (avg 22 invoices) and monetary value (avg £9,610). Using these statistics, these are the most valuable customers and should be prioritized for retention through exclusive rewards and early access to new products.
-* **Potential Loyalists** (893 customers) - averaging about 4 purchases and £1,314 in spend. These customers are high-priority for the next quarter, therefore loyalty bonuses, memberships, and/or exclusive perks could secure them as loyal or champion customers.
-* **Hibernating Customers** (1,133 customers) - have the highest recency and the lowest frequency and spend, averaging 2 purchases and £408 in spend. A solution tailored to addressing these statistics would be to add "win-back" emails, seasonal promotions and discounts, which could re-engage this large segment.
+| **Data** | **Trend** | **Solution** |
+| --- | --- | --- |
+|**Invoice distribution data** | The majority of typical transactions fall between £0 and £724, with a mean of £359, meaning most customers are mid-range spenders | promotional bundles or upsell offers targeting the £300–£700 range would have the highest chance of moving customers toward larger basket sizes |
+| **Monthly orders analysis** | cancellations remain consistently low relative to placed orders | high-volume promotional campaigns during peak months without worrying about a spike in returns eating into revenue |
+| **Monthly sales data** | two consistent revenue peaks in November of both 2010 and 2011, reaching over £1.4 million | confirms a strong seasonal pattern that LGS team should exploit by launching pre-holiday campaigns in September to October to capture early buyers before the November rush|
+| **Sales growth analysis** | the steepest drops happen in January and December | counter these predictable downwards trends with post-holiday clearance promotions and New Year loyalty incentives to retain customers |
+| **Active users** | revenue problem is tied to customer acquisition and retention rather than spend per customer | Investing in campaigns that bring in new buyers or re-engage dormant ones would have a direct impact on revenue |
+| **New vs existing user** | New customer acquisition slowed significantly by late 2011, with existing users driving nearly all activity | dedicated acquisition strategy such as referral programs, social media campaigns, or wholesale outreach to grow the customer base rather than relying solely on repeat buyers |
+
+
+**Key Segment insights:** 
+* **Loyal Customers** (712 customers) - highest frequency (avg 22 invoices) and monetary value (avg £9,610). Through analyzing these records, we know these are the most valuable customers and should be prioritized for retention through exclusive rewards and early access to new products.
+* **Potential Loyalists** (893 customers) - averaging about 4 purchases and £1,314 in spend, these customers are high-priority for the next quarter. Converting even half of them into Loyal Customers (who average £9,610) through a targeted loyalty programs/memberships would generate significant incremental revenue.
+* **Hibernating Customers** (1,133 customers) - have the highest recency and the lowest frequency and spend, averaging 2 purchases and £408 in spend. A solution tailored to addressing these records would be to add "win-back" emails, seasonal promotions and discounts, which could re-engage this large segment.
 
 # Improvements 
 Several improvements can be made to the PoC in future iterations to optimize its functions:
