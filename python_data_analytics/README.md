@@ -57,9 +57,9 @@ My goal is to design a new marketing strategy with the data I was provided in or
 
 
 **Key Segment insights:** 
-* **Loyal Customers** (712 customers) - highest frequency (avg 22 invoices) and monetary value (avg £9,610). Through analyzing these records, we know these are the most valuable customers and should be prioritized for retention through exclusive rewards and early access to new products.
-* **Potential Loyalists** (893 customers) - averaging about 4 purchases and £1,314 in spend, these customers are high-priority for the next quarter. Converting even half of them into Loyal Customers (who average £9,610) through a targeted loyalty programs/memberships would generate significant incremental revenue.
-* **Hibernating Customers** (1,133 customers) - have the highest recency and the lowest frequency and spend, averaging 2 purchases and £408 in spend. A solution tailored to addressing these records would be to add "win-back" emails, seasonal promotions and discounts, which could re-engage this large segment.
+* **Champions (843 customers)** - highest frequency (avg ~23 invoices) and monetary value (avg £10,6600.83). Through analyzing these records, we know these are the most valuable customers and should be prioritized for retention through exclusive rewards and early access to new products.
+* **Hibernating Customers** (1,535 customers) - have the highest recency and the lowest frequency and spend, averaging 1 purchase and ~£340 in spend. A solution tailored to addressing these records would be to add "win-back" emails, seasonal promotions and discounts, which could re-engage this large segment.
+* **Can't Lose (86 customers)** - has an average recency of ~319 days, meaning these customers have not made a purchase in a very long time despite having made an average of 17.63 purchases and spending an average of £5,670.73 per customer. These were once highly engaged, high-value buyers who have gone completely silent. Because of their strong purchase history, a personalized win-back campaign should be launched that includes targeted discounts on product categories they have previously purchased, as well as recommendations for new products related to their past buying behaviour. Losing these customers permanently would be costly given their high average spend.
 
 # Improvements 
 Several improvements can be made to the PoC in future iterations to optimize its functions:
