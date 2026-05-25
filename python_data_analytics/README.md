@@ -43,6 +43,7 @@ A second Docker container ```jrvs-jupyter``` hosts the analytics stack:
 Both containers communicate through the shared Docker bridge network ```jarvis-net```, allowing Jupyter notebooks to query PostgreSQL directly using the container hostname.
 
 ## Data Analytics and Wrangling
+[Jupyter Notebook](http://127.0.0.1:8888/lab/workspaces/auto-u)
 
 My goal is to design a new marketing strategy with the data I was provided in order to create a business solution.
 
