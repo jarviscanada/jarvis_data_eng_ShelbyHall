@@ -4,9 +4,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_ShelbyHall
 # Introduce yourself, your academic and professional background.
 
 # What excites you about the software industry and your passion. At least 80 words
-summary: "I am a BASc graduate from the University of Guelph-Humber with over four years of client-facing experience in sales and marketing, complemented by a technical foundation in database design, and data analytics. My academic background instilled a naturally investigative approach to problem-solving which is a mindset that ties closely into the diagnostic, requirements-driven nature of business analysis. 
-
-What draws me to the software industry is that it sits at the center of solving modern problems: my background in sales and client management taught me how to identify what people need and find the most effective way to deliver it, while my investigative training taught me how to dig past the surface of a problem to understand what's actually driving it. I'm drawn to environments where there's always a better approach to discover or a more elegant solution to build, and as someone who thrives on growth and challenge, that's exactly what I'm seeking in this next step of my career."  
+summary: "I am a BASc graduate from the University of Guelph-Humber with five years of client-facing experience in sales, complemented by a technical foundation in SQL, Python, database design, and data analytics. My previous work experience, where I acted as the main point of contact between the organization and its clients, helped me build a stronger passion for client-facing roles. Additionally, my academic background instilled a naturally investigative approach to problem-solving which is a mindset that ties closely into the diagnostic, requirements-driven nature of business analysis. As someone who thrives on growth and challenge, that's exactly what I'm seeking in this next step of my career."  
 
 # Group your skills by level. 
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -14,7 +12,7 @@ skills:
   # At least 5 skills
   proficient:
     - RDBMS/SQL
-    - Data Modeling
+    - Data Modelling
     - CRM record-keeping
     - Agile/Scrum
     - Stakeholder Communication
@@ -23,8 +21,7 @@ skills:
     - Python
     - Docker
     - Jupyter
-    - Cloud Computing
-    - PowerBI
+    - Power BI
     - Git
   # At least 5 skills
   familiar:
@@ -32,7 +29,7 @@ skills:
     - Linux/Bash
     - PySpark
     - Account Management
-
+    - Cloud Computing
 # List of Jarvis projects
 jarvis_projects:
   - name: "Linux Cluster Monitoring Agent"
@@ -42,11 +39,10 @@ jarvis_projects:
     description: "During this project, I developed a Linux Cluster Monitoring Agent installed across cluster nodes using Bash to collect hardware specifications and real-time resource usage data, storing it in a centralized PostgreSQL database, provisioned via Docker, for historical analysis. The primary purpose is to proactively identify underperforming servers and detect node failures before they impact production workloads, giving backend developers and operations teams clear, ongoing visibility into cluster health. "  
   - name: "Python Data Analytics"
     git_url: "https://github.com/jarviscanada/jarvis_data_eng_ShelbyHall/tree/develop/python_data_analytics"
-    description:
-      - "I designed and built a lightweight, reproducible analytics environment using Docker to provision two containers: a PostgreSQL data warehouse to store sanitized transaction records, and a Jupyter Notebook environment (Python, Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy) to query and analyze the data directly, with both containers communicating over a shared Docker bridge network. I analyzed two years of transaction history to uncover trends in order volume, seasonality, cancellations, and customer spend, and performed RFM (Recency, Frequency, Monetary) segmentation to identify distinct customer groups. I concluded the project by presenting my findings and recommendations to stakeholders, walking through the key trends uncovered in the data and the marketing actions each one supported."
-   - name: "Monthly Reporting Dashboard"
-     git_url: "/springboot"
-     description: "I acted as the primary liaison between business stakeholders and the technical development team to replace an error-prone monthly reporting process at RBC GAM. My role centred on requirements gathering by meeting with stakeholders across the organization and translating their needs into clear, actionable requirements, and ensuring the dashboard genuinely solved the problems it was meant to address. Throughout the project, I maintained ongoing communication and validated that in-progress work matched stakeholder expectations. Once the dashboard was built, I prepared and delivered a presentation to stakeholders summarizing the solution, its capabilities, and the value it provided in reducing manual reporting effort and giving teams real-time visibility into resource allocation."
+    description: "I designed and built a lightweight, reproducible analytics environment using Docker to provision two containers: a PostgreSQL data warehouse to store sanitized transaction records, and a Jupyter Notebook environment (Python, Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy) to query and analyze the data directly, with both containers communicating over a shared Docker bridge network. I analyzed two years of transaction history to uncover trends in order volume, seasonality, cancellations, and customer spend, and performed RFM (Recency, Frequency, Monetary) segmentation to identify distinct customer groups. I concluded the project by presenting my findings and recommendations to stakeholders, walking through the key trends uncovered in the data and the marketing actions each one supported."
+  - name: "Monthly Reporting Dashboard"
+    git_url: str(required=False)
+    description: "I acted as the primary liaison between business stakeholders and the technical development team to replace an error-prone monthly reporting process at RBC GAM. My role centred on requirements gathering by meeting with stakeholders across the organization and translating their needs into clear, actionable requirements, and ensuring the dashboard genuinely solved the problems it was meant to address. Throughout the project, I maintained ongoing communication and validated that in-progress work matched stakeholder expectations. Once the dashboard was built, I prepared and delivered a presentation to stakeholders summarizing the solution, its capabilities, and the value it provided in reducing manual reporting effort and giving teams real-time visibility into resource allocation."
         #- name: "Python Data Analytics"
         #   git_url: "/python_data_anlytics"
         #   description: "Description123"
@@ -86,7 +82,7 @@ education:
   - school_name: "University of Guelph"
     duration: "2020-2024"
     degree: "Bachelor of Applied Sciences"
-    department: "Jusitce Studies"
+    department: "Justice Studies"
 
     awards_achievements: 
       - "Graduated with distinction"   
@@ -104,5 +100,5 @@ others:
   - title: "Activities/Hobbies"
     bullets:
       - "Travelling: I've travelled to 18 countries, in 4 different continents. I enjoy learning new cultures and integrating into the local lifestyle."
-      - "Tennis: Took tennis lessons for four years. Now I tend to visit courts as a passtime."
+      - "Tennis: Took tennis lessons for four years. Now I tend to visit courts as a pastime."
       - "Chess: I occasionally played competitively in the Ontario Youth Chess Championship (OYCC), where the highest I've won was fourth place against hundreds of competitors. Now I play for fun with my dad."
